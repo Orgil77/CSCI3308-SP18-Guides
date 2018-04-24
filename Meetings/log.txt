@@ -1,0 +1,13 @@
+Meetings:
+1. Introduced ourselves, talked about ideas that we had.
+2. Decision of the group on project and prepare the project proposal.
+3. Assign front-end pages to members.
+4. Check the status of the front end. 
+5. Create a database model which is 2 tables.
+6. Merge the front-end and try to make them in same style.
+Upcoming targets:
+7. Check the front-end functionality and connect the database to front-end.
+Send some sample queries using front end to database. For example searching, 
+creating a profile. 
+8. Prepare the presentation, assign topics for each member. Final check on 
+website.
