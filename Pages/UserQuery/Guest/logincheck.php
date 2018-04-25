@@ -17,7 +17,7 @@
             {
               echo "<script>alert('Login successfully！');</script>";
               echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."content1.html"."\""."</script>";
-              $row = mysql_fetch_array($result);  //将数据以索引方式储存在数组中
+              $row = mysql_fetch_array($result);  
               echo $row[0];
             }
             else
