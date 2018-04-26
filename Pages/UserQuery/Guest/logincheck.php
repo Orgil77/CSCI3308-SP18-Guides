@@ -16,7 +16,7 @@
             if($num)
             {
               echo "<script>alert('Login successfully！');</script>";
-              echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."content1.html"."\""."</script>";
+              echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."Homepage.html"."\""."</script>";
               $row = mysql_fetch_array($result);  
               echo $row[0];
             }
