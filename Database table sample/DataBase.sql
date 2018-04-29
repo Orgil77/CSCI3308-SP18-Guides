@@ -1,49 +1,46 @@
 create table if not exists user (
   Fname varchar(20),
   Lname varchar(20),
+  Sex char(1),
+  UserUserName varchar(20),
   Country varchar(20),
-  sex char(1),
+  Description(20),
   Email varchar(20),
   Phone int(11),
-  bday DATE
+  Bday DATE
 );
 insert into 
 	user(
-		Fname,
+	    Fname,
 	    Lname,
+      Sex,
+	    UserUserName
 	    Country,
-	    sex,
+	    Description,
 	    Email,
-	    phone,
-	    bday
+	    Phone,
+	    Bday
 		)
 create table if not exists guide(
   Fname varchar(20),
   Lname varchar(20),
+  Sex char(1),
+  GuideUserName varchar(20),
   Country varchar(20),
-  sex char(1),
+  Description varchar(20),
   Email varchar(20),
-  phone int(11),
-  bday DATE
+  Phone int(11),
+  Bday DATE
 );
 insert into
   guide(
     Fname,
     Lname,
+    Sex,
+    GuideUserName,
     Country,
-    sex,
+    Description,
     Email,
     phone,
-    rating,
     bday
   )
-values(
-    "Jack",
-    "Reacher",
-    "UK",
-    "M",
-    "jr@gmail.com",
-    1234567890,
-    4,
-    "1986-03-08"
-  );
