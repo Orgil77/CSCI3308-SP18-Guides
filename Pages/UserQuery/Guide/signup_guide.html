@@ -1,0 +1,153 @@
+<!--
+Author: Xinyang Yuan
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  background-color: rgb(240, 240, 240);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #333;
+    opacity: 0.80;
+    position: fixed;
+    width:100%;
+    top:0;
+}
+
+.topmenu li {
+    float:none;
+}
+
+.topmenu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.topmenu li a:hover {
+    background-color:#111;
+}
+
+.footer{
+  list-style-type: none;
+  margin: auto;
+  padding: 10px 0 0 0;
+  border-top: 1px solid #999;
+  width:auto;
+  text-align: center;
+}
+.footer li {
+  display:inline;
+  border-right: 1px solid #aea68c;
+  padding: 0 30px;
+}
+.footer li:last-child{
+  border-right: none;
+}
+.footer li a {
+  text-align: center;
+  text-decoration: none;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -9999;
+}
+.content{
+  max-width:30%;
+  padding:15px;
+  border-radius:5px;
+  background-color: rgba(160,206,240,0.5);
+  margin:auto;
+  margin-top: 235px;
+  margin-bottom: 140px;
+}
+
+#slogan{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #3c3c3c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: #333;
+}
+
+</style>
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+  <source src="4.mp4" type="video/mp4" volume=0.01>
+  Your browser does not support HTML video.
+</video>
+<div id="slogan">
+
+</div>
+<div>
+  <ul class="topmenu">
+    <li style="float:left"><a href="Homepage.html">HOME</a></li>
+    <li style="float:right"><a href="">Contact</a></li>
+  </ul>
+</div>
+<div class="content">
+  <h2 style="text-align:center">Sign up for Guide</h2>
+  <form action="guide_signup.php" method="post">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Your username..">
+      <br>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="PWord" placeholder="Your password..">
+      <label for="confirm_password">Confirm your Password</label>
+      <input type="password" name="confirm" placeholder="Type in your passsord again..">
+      <input type="submit" name="submit" value="Sign up" id="Sign up">
+  </form>
+</div>
+<div class="footer">
+  <ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">Destinations</a></li>
+    <li><a href="">News</a></li>
+    <li><a href="">Contact</a></li>
+  </ul>
+   Copyright 2018 <a href="#">Softdevelopers</a>
+</div>
+</body>
+</html>
