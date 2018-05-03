@@ -1,46 +1,26 @@
 create table if not exists user (
-  Fname varchar(20),
-  Lname varchar(20),
-  Sex char(1),
-  UserUserName varchar(20),
-  Country varchar(20),
-  Description(20),
-  Email varchar(20),
-  Phone int(11),
-  Bday DATE
+  usr_id INT(11) NOT NULL AUTO_INCREMENT,
+  Fname VARCHAR(100) DEFAULT NULL,
+  Lname VARCHAR(100) DEFAULT NULL,
+  Sex VARCHAR(100) DEFAULT NULL,
+  UserUserName VARCHAR(100) DEFAULT NULL,
+  Country VARCHAR(100) DEFAULT NULL,
+  Description VARCHAR(100) DEFAULT NULL,
+  Email VARCHAR(100) DEFAULT NULL,
+  Phone int(10) DEFAULT NULL,
+  Bday DATE DEFAULT NULL,
+  PRIMARY KEY (usr_id)
 );
-insert into 
-	user(
-	    Fname,
-	    Lname,
-      Sex,
-	    UserUserName
-	    Country,
-	    Description,
-	    Email,
-	    Phone,
-	    Bday
-		)
 create table if not exists guide(
-  Fname varchar(20),
-  Lname varchar(20),
-  Sex char(1),
-  GuideUserName varchar(20),
-  Country varchar(20),
-  Description varchar(20),
-  Email varchar(20),
-  Phone int(11),
-  Bday DATE
+  usr_id INT(11) NOT NULL AUTO_INCREMENT,
+  Fname VARCHAR(100) DEFAULT NULL,
+  Lname VARCHAR(100) DEFAULT NULL,
+  Sex VARCHAR(100) DEFAULT NULL,
+  GuideUserName VARCHAR(100) DEFAULT NULL,
+  Country VARCHAR(100) DEFAULT NULL,
+  Description VARCHAR(100) DEFAULT NULL,
+  Email VARCHAR(100) DEFAULT NULL,
+  Phone int(10) DEFAULT NULL,
+  Bday DATE DEFAULT NULL,
+  PRIMARY KEY (usr_id)
 );
-insert into
-  guide(
-    Fname,
-    Lname,
-    Sex,
-    GuideUserName,
-    Country,
-    Description,
-    Email,
-    phone,
-    bday
-  )
