@@ -62,12 +62,22 @@ img { margin: 0px; padding: 0px; border: none; }
 	width: 980px;
 	padding: 0 10px;
 	background: url(images/template_content.png) repeat-y center;
+	
 }
 
 #guest_container {
 	width: 980px;
 	padding: 30px 0;
-	background: url(images/guest_content_top.jpg) top center no-repeat;
+	overflow: hidden;
+}
+
+#myVideo {
+	width: 980px;
+	padding: 30px 0;
+	position: absolute;
+    right: 184;
+    bottom: 41;
+    overflow: hidden;
 }
 
 #guest_header {
